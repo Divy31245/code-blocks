@@ -1,0 +1,27 @@
+.main-form-div{
+    position: fixed;
+    border: 2px solid black;
+    left: 0;
+    right: 75%;
+    top: 10%;
+    height: 100%;
+    padding: 20px;
+    overflow: hidden;
+    background-color: #121212;
+}
+.input-file input[type="file" i]::-webkit-file-upload-button{
+    font-size: 0.00002px;
+}
+.input-file input[type="file"]{
+    opacity: 0;
+}
+input.file {
+	position: relative;
+	text-align: right;
+    opacity: 0;
+    /* filter:alpha(opacity:0); */
+	-moz-opacity:0 ;
+	
+	
+	z-index: 2;
+}
