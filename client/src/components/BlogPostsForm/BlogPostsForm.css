@@ -1,27 +1,99 @@
 .main-form-div{
     position: fixed;
-    border: 2px solid black;
+    border: none;
     left: 0;
-    right: 75%;
+    right: 65%;
     top: 10%;
     height: 100%;
     padding: 20px;
     overflow: hidden;
     background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+.input-info{
+    width: 100%;
+    background-color: #312e2e;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: white;
+    
 }
 .input-file input[type="file" i]::-webkit-file-upload-button{
-    font-size: 0.00002px;
+    font-size: 2px;
+    cursor: pointer;
 }
 .input-file input[type="file"]{
     opacity: 0;
+    cursor: pointer;
 }
-input.file {
-	position: relative;
-	text-align: right;
-    opacity: 0;
-    /* filter:alpha(opacity:0); */
-	-moz-opacity:0 ;
-	
-	
-	z-index: 2;
+
+.sub-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+.sub-div2{
+    width: 76%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.heading{
+    font-size: 20px;
+}
+.sub-div1{
+    display: flex;
+    gap: 30px;
+}
+#kaibi{
+    height: 10vh;
+    background: #312e2e;
+    color: white;
+    border: none;
+    display: flex;
+    font-size: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100%;
+    
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.div1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.info-div{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    color: #8896a6;
+}
+
+.submit-btn{
+    padding: 3%;
+    color: white;
+    background-color: #8896a6;
+    width: 40%;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.submit-btn:hover{
+    opacity: 0.8;
 }

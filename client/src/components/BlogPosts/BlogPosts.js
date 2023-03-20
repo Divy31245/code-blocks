@@ -5,6 +5,7 @@ import "./BlogPosts.css";
 import { Upvote } from "@styled-icons/boxicons-solid";
 import { Edit } from "@styled-icons/boxicons-solid";
 import { Delete } from "@styled-icons/material";
+import { useEffect } from "react";
 const BlogPosts = ({ post, setBlogPostId }) => {
   const dispatch = useDispatch();
 
@@ -39,7 +40,7 @@ const BlogPosts = ({ post, setBlogPostId }) => {
           ))}
         </div>
         <div className="btns">
-          <button className="btn" onClick={() => setBlogPostId(post._id)}>
+          <button className="btn" onClick={setBlogPostId(post._id)}>
             <Edit size={40} />
           </button>
           <button

@@ -42,7 +42,7 @@ export const upvoteSinglePost = (post) => async (dispatch) => {
 
 export const removeBlogPost = (post) => async (dispatch) => {
   try {
-    const { data } = await api.removeBlogPost(post);
+    const { data } = await await api.removeBlogPost(post);
 
     dispatch({ type: "DELETE_SINGLE_BLOG_POST", payload: data });
   } catch (error) {

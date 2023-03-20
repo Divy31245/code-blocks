@@ -22,11 +22,11 @@ const Blogs = ({ setBlogPostId }) => {
 
   return (
     <div className="main-blog-div">
-      {records.map((post) => (
+      {records.length ? records.map((post) => (
         <div key={post._id} className='main-blog-post-div'>
           <BlogPosts post={post} setBlogPostId={setBlogPostId} />
         </div>
-      ))}
+      )) : <div className="no-posts">no posts....</div>}
     </div>
   );
 };
